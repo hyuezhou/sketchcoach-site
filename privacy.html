@@ -18,18 +18,20 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="sub">SketchCoach · Last updated 7 September 2026</p>
+<p class="sub">SketchCoach · Last updated 28 September 2026</p>
 
-<p><strong>SketchCoach collects no personal data. The only thing it ever transmits is the piece of a drawing you choose to send to AI Fix, and that is discarded once the result comes back.</strong></p>
+<p><strong>SketchCoach has no accounts, no analytics and no advertising. The only data that ever leaves your device is what you choose to send to AI Fix: the part of a drawing you circled plus a small copy of the picture (or the whole picture in whole-picture mode) and the hint you typed. It goes to our server and on to Google’s Gemini API to be redrawn, and we keep none of it.</strong></p>
 
 <h2>What we collect</h2>
-<p>Nothing. The app has no user accounts, no sign-in, no analytics, no advertising, and no
-third-party SDKs of any kind. It contains no networking code of its own.</p>
+<p>There are no user accounts, no sign-in, no analytics, no advertising and no third-party SDKs.
+The app talks to two things and nothing else: Apple’s App Store for purchases, and our AI Fix
+server when — and only when — you tap “Fix it”. What that request contains is described under
+“AI Fix” below. We keep no copy of it and cannot connect it to you.</p>
 
 <h2>What stays on your device</h2>
 <p>Your drawings, your progress, and your settings are written to your device's own storage and
-never leave it. They are removed when you delete the app. Nothing is backed up to us, because
-there is no “us” to back up to — we operate no server.</p>
+never leave it. They are removed when you delete the app. Nothing is backed up to us: our AI Fix
+server keeps nothing after it has returned a result.</p>
 
 <h2>Network connections</h2>
 <p>Two things in the app use the network, and nothing else does.</p>
@@ -37,19 +39,26 @@ there is no “us” to back up to — we operate no server.</p>
 restore an in-app purchase. That is handled entirely by Apple's StoreKit. We receive no information
 about you from it — not your name, not your Apple Account, not your payment details.</p>
 <p><strong>AI Fix (optional, from version 1.2).</strong> When you choose to use AI Fix, the part of
-your drawing that you circled — or, if you choose the whole-picture mode, the whole picture — is
-sent to our server together with the short hint you typed, so that an AI image model can redraw
-it. The server forwards it to the model provider, returns the result to your device, and keeps
-nothing: the image is not stored, not linked to you, not used for training and not used for any
-other purpose. The request carries a random per-install identifier used only to limit how many
+your drawing that you circled, together with a small copy of the whole picture that the model
+uses only to match your style — or, if you choose the whole-picture mode, the whole picture — is
+sent to our server (a Cloudflare Worker) together with the short hint you typed, so that an AI
+image model can redraw it. The server forwards it to Google’s Gemini API, returns the result to
+your device, and keeps nothing: we do not store the image, do not link it to you and do not use
+it for any other purpose. Google processes it to produce the result; under the Gemini API terms
+that apply to our paid use, Google does not use it to train its models and may retain it only
+briefly for abuse detection. The request carries a random per-install identifier used only to limit how many
 fixes an install can make per day; it is not tied to your name, Apple Account or device identity.
 You are told this in the app before the first upload, and AI Fix never runs unless you tap
 "Fix it". Everything else — your drawings, your gallery, your progress — stays on your device
 exactly as before.</p>
 
 <h2>Children</h2>
-<p>The app is suitable for children. Because it collects no data at all, it collects no data from
-children either. There is no chat, no user-to-user content, no external links, and no advertising.</p>
+<p>The app is suitable for children. There is no chat, no user-to-user content, no external links
+and no advertising. Drawings and progress stay on the device. The only way a child’s drawing or
+photo can leave the device is the AI Fix step described above: it never runs on its own, it asks
+for consent first, and the consent sheet asks children under 13 to check with a parent. We do not
+knowingly collect personal information from children; if you believe a child has sent us
+something, write to us and we will help.</p>
 
 <h2>Sharing a drawing</h2>
 <p>The share button hands an image to the iOS share sheet, under your control. Where that image
@@ -65,32 +74,30 @@ SketchCoach.</p>
 <hr>
 
 <h1>隐私政策</h1>
-<p class="sub">简笔画家（SketchCoach）· 最后更新 2026 年 9 月 7 日</p>
+<p class="sub">简笔画家（SketchCoach）· 最后更新 2026 年 9 月 28 日</p>
 
-<p><strong>本 app 不收集任何个人数据。它唯一会传输的，是你主动交给「AI 改一改」的那一块画，结果一回来就丢弃。</strong></p>
+<p><strong>本 app 没有账号、没有统计、没有广告。唯一会离开设备的，是你主动交给「AI 改一改」的内容：你圈住的那一块画和一张缩小的整图（选「整张」模式时是整张画），以及你写的一句提示。它经我们的服务器交给 Google 的 Gemini API 重画，我们不保留任何一份。</strong></p>
 
 <h2>我们收集什么</h2>
-<p>什么都不收集。没有账号，不需要登录，没有统计分析，没有广告，也没有任何第三方 SDK。
-app 本身不含任何联网代码。</p>
+<p>没有账号，不需要登录，没有统计分析，没有广告，也没有任何第三方 SDK。app 只和两处通信：购买时的 Apple App Store，以及你点「改一改」那一刻的「AI 改一改」服务器。那次请求里有什么，下面「AI 改一改」一节写明；我们不保留副本，也无法把它和你对应起来。</p>
 
 <h2>什么留在你的设备上</h2>
 <p>你的画、进度和设置都写在你自己设备的存储里，不会离开设备。删除 app 时它们一并删除。
-我们不做任何备份——因为我们没有服务器。</p>
+我们不做任何备份：「AI 改一改」的服务器把结果送回后什么都不留。</p>
 
 <h2>联网的两处</h2>
 <p>app 里只有两件事会联网，其余一律不联网。</p>
 <p><strong>购买。</strong>你购买或恢复内购时，走的是 Apple 自己的购买流程，完全由 Apple 的
 StoreKit 处理。我们不会从中得到关于你的任何信息——姓名、Apple 账号、支付信息，都不会。</p>
-<p><strong>AI 改一改（可选，1.2 起）。</strong>当你选择使用「AI 改一改」，你圈住的那一块画——如果你选了
-「整张」模式，则是整张画——连同你写的一句提示，会传到我们的服务器，交给 AI 图像模型重画。服务器把它
-转给模型提供方，把结果送回你的设备，自己什么都不留：这张图不存储、不和你关联、不用于训练，也不用于
-任何别的用途。请求里带一个随机的按安装生成的标识，只用来限制每台装机每天的改稿次数，不和你的姓名、
+<p><strong>AI 改一改（可选，1.2 起）。</strong>当你选择使用「AI 改一改」，你圈住的那一块画和一张缩小的整图（模型只用它来对齐你的画风）——如果你选了
+「整张」模式，则是整张画——连同你写的一句提示，会传到我们的服务器（Cloudflare Worker），交给 AI 图像模型重画。服务器把它
+转给 Google 的 Gemini API，把结果送回你的设备，自己什么都不留：我们不存储这张图、不和你关联，也不用于
+任何别的用途。Google 处理它是为了生成结果；按我们付费使用的 Gemini API 条款，Google 不会用它训练模型，只可能为防滥用短暂保留。请求里带一个随机的按安装生成的标识，只用来限制每台装机每天的改稿次数，不和你的姓名、
 Apple 账号或设备身份挂钩。第一次上传前 app 会先告诉你这些；不点「改一改」，它永远不会联网。除此之外
 ——你的画、画廊、进度——都和以前一样只在你的设备上。</p>
 
 <h2>儿童</h2>
-<p>本 app 适合儿童使用。因为它完全不收集数据，所以也不会收集儿童的数据。app 内没有聊天、
-没有用户之间的内容、没有外部链接，也没有广告。</p>
+<p>本 app 适合儿童使用。app 内没有聊天、没有用户之间的内容、没有外部链接、没有广告，画作和进度都留在设备上。孩子的画或照片离开设备的唯一途径是上面说的「AI 改一改」：它不会自己运行，先征得同意，同意页里也提醒未满 13 岁的孩子先问家长。我们不会有意收集儿童的个人信息；如果你认为孩子发来了什么，写信给我们，我们会协助处理。</p>
 
 <h2>分享作品</h2>
 <p>分享按钮把一张图片交给 iOS 的系统分享面板，由你决定发到哪里，之后遵循你所选 app 的规则。
