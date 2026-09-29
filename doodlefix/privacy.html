@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DoodleFix — Privacy Policy / 隐私政策</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 40rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+         font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.5rem; }
+  .sub { color: #6b7280; margin-top: 0; }
+  hr { border: 0; border-top: 1px solid #d1d5db; margin: 3rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">DoodleFix (人人漫画家) · Last updated 29 September 2026</p>
+
+<p>DoodleFix has no accounts, no analytics and no advertising. Your drawings stay on your device.
+They leave it only when you start one of the app's AI features — AI Fix, Describe it or Circle a
+layout — or when you share a picture yourself. An AI request goes to our server and
+then to Google's Gemini API to generate a result, and we keep none of what you sent; the only thing
+our server keeps is a daily request count, described below.</p>
+
+<h2>What we collect</h2>
+<p>There are no user accounts, no sign-in, no analytics, no advertising and no third-party SDKs.
+The app talks to two things and nothing else: Apple's App Store for purchases, and our AI server
+when — and only when — you start one of the AI features. What each request contains is described
+below. We keep no copy of your pictures or words and cannot connect a request to you.</p>
+
+<h2>What stays on your device</h2>
+<p>Your drawings and every earlier round of them, photos you import, your settings and your
+remaining AI fixes are written to your device's own storage. The drawings also appear in the Files
+app, and they are part of any iPhone or iPad backup you make yourself; DoodleFix keeps no copy
+anywhere else. Everything is removed when you delete the app — all but one small marker in the
+device's keychain that records that the two included fixes were given, so a reinstall does not give
+them again. Tools that work on the picture itself — the fill bucket, spray, ink brush, erase
+background and “Line art only” — run entirely on the device.</p>
+
+<h2>Network connections</h2>
+<p>Two things in the app use the network, and nothing else does.</p>
+<p><strong>Purchases.</strong> Buying a pack of AI fixes goes through Apple's own App Store purchase
+flow, handled entirely by Apple's StoreKit. We receive no information about you from it — not your
+name, not your Apple Account, not your payment details.</p>
+<p><strong>The AI features (optional).</strong> When you choose to use one, this is sent to our server
+(a Cloudflare Worker), which forwards it to Google's Gemini API and returns the result to your
+device. The server does not keep what you sent.</p>
+<ul>
+  <li><strong>AI Fix</strong> — a rectangle of your drawing around the part you circled, with your
+      circle marked on it (and a mask of the circle); a small copy of the whole picture, used only
+      to match your style; whether you chose Fix, Add or Replace; and your hint. In whole-picture
+      mode, the whole picture, the “How much” setting and your hint. “3 versions” sends the same
+      request three times.</li>
+  <li><strong>Describe it</strong> — the sentence you typed and the style you picked, with blank
+      paper. Nothing you have drawn is sent.</li>
+  <li><strong>Circle a layout</strong> — the outlines you drew, their numbers and your notes, and
+      the style you picked, on blank paper. Nothing you have already drawn is sent.</li>
+</ul>
+<p>Every request also includes the app's language and name, and AI Fix also sends the app's guess
+of whether the drawing is line art or a sketch. We do not store any of it, do not link it to you
+and do not use it for anything else. Google processes it to produce the result; under the Gemini
+API terms that apply to our paid use, Google does not use it to train its models and may retain it
+only briefly for abuse detection.</p>
+<p>Each request carries a random identifier created when the app is installed (a new one after a
+reinstall). The server keeps only a count of that identifier's requests for the day, deleted
+automatically within 36 hours, so it can cap requests per install. Your IP address is used, and not
+stored by us, to limit how often requests can come from one network. Neither is tied to your name,
+Apple Account or device. Before the first upload, the app explains what is sent and how it is
+handled, and none of these features runs unless you tap to start it.</p>
+
+<h2>Children</h2>
+<p>The app is suitable for children. There is no chat, no user-to-user content and no advertising;
+the only link out of the app is to our other app, SketchTutor, on the App Store, from Settings.
+The only way DoodleFix itself sends a child's drawing or photo off the device is one of the AI
+features above: they never run on their own, the app asks for consent before the first use, and
+the consent screen asks children under 13 to check with a parent. We do not knowingly collect
+personal information from children; if you believe a child has sent us something, write to us and
+we will help.</p>
+
+<h2>Saving and sharing a drawing</h2>
+<p>“Save to Photos” adds the picture to your photo library, with your permission. The share button
+hands an image to the iOS share sheet, under your control; where it goes is decided by you and
+governed by whichever app you send it to. Nothing is uploaded by DoodleFix.</p>
+
+<h2>Changes</h2>
+<p>If this policy ever changes, the updated version will be posted at this address with a new date.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy: <a href="mailto:info@astralogy.org">info@astralogy.org</a></p>
+
+<hr>
+
+<div lang="zh-Hans">
+<h1>隐私政策</h1>
+<p class="sub">人人漫画家（DoodleFix）· 最后更新 2026 年 9 月 29 日</p>
+
+<p>本 app 没有账号、没有统计、没有广告，你的画只存在你的设备上。只有当你主动使用 AI 功能（「AI 改一改」「说一句」「圈出布局」）并点下开始时，或者你自己分享图片时，画才会离开设备。AI 请求经我们的服务器交给 Google 的 Gemini API 生成结果；除了下文说的每日请求计数，我们什么都不保留。</p>
+
+<h2>我们收集什么</h2>
+<p>没有账号，不需要登录，没有统计分析，没有广告，也没有任何第三方 SDK。app 只和两处通信：购买时的 Apple App Store，以及你开始使用 AI 功能时我们的 AI 服务器。每种请求里有什么，下面逐一写明；我们不保留你的画和文字的副本，也无法把请求和你对应起来。</p>
+
+<h2>什么留在你的设备上</h2>
+<p>你的画及其之前的每一轮、你导入的照片、设置、剩余的 AI 次数，都写在你自己设备的存储里。画在「文件」app 里也能看到，也会包含在你自己做的 iPhone 或 iPad 备份里；人人漫画家不在别处保存副本。删除 app 时它们一并删除——只有设备钥匙串里的一个小标记会留下，记着附带的 2 次已经给过，重装时不会再给一次。涂色桶、喷枪、水墨毛笔、擦底图和「提取线稿」这些直接处理画面的工具，全部在设备上完成。</p>
+
+<h2>联网的两处</h2>
+<p>app 里只有两件事会联网，其余一律不联网。</p>
+<p><strong>购买。</strong>购买 AI 次数包走的是 Apple 自己的购买流程，完全由 Apple 的 StoreKit 处理。我们不会从中得到关于你的任何信息——姓名、Apple 账号、支付信息，都不会。</p>
+<p><strong>AI 功能（可选）。</strong>当你选择使用时，以下内容会传到我们的服务器（Cloudflare Worker），由它转给 Google 的 Gemini API，再把结果送回你的设备。服务器不保留你发送的内容。</p>
+<ul>
+  <li><strong>AI 改一改</strong>——圈住那块周围的一块长方形画面（上面标着你画的圈，另附一张圈的遮罩）、一张缩小的整图（只用来对齐画风）、你选的「改好／加上／换成」和提示；「整张」模式是整张画、「改多少」和提示。「出 3 张」会把同一个请求发三次。</li>
+  <li><strong>说一句</strong>——你写的那句话和选的风格，配一张白纸，不发送任何画。</li>
+  <li><strong>圈出布局</strong>——你画的圈、编号和标注，以及选的风格，画在白纸上；不发送你已有的画。</li>
+</ul>
+<p>每个请求还会带上 app 的语言设置和 app 名称；「AI 改一改」还会带上 app 对画风的判断（线稿还是素描）。我们不会存储这些内容，不会把它们和你关联，也不会用于任何别的用途。Google 处理它是为了生成结果；按我们付费使用的 Gemini API 条款，Google 不会用它训练模型，只可能为防滥用短暂保留。</p>
+<p>每个请求带一个安装时随机生成的标识（重装后会换新）。服务器只按这个标识记一个当天的请求次数，36 小时内自动删除，用来限制每次安装每天的请求量；你的 IP 地址会用于限制同一网络的请求频率，我们不保存。这些都不和你的姓名、Apple 账号或设备挂钩。第一次上传前 app 会说明发送什么、如何处理；你不点开始，这些功能永远不会联网。</p>
+
+<h2>儿童</h2>
+<p>本 app 适合儿童使用。app 内没有聊天、没有用户之间的内容、没有广告；唯一的外部链接，是设置里通往我们另一个 app「简笔画家」的 App Store 页面。本 app 自己把孩子的画或照片传出设备的唯一途径，是上面说的 AI 功能：它们不会自己运行，第一次使用前会先征求同意，同意页里也提醒未满 13 岁的孩子先问家长。我们不会有意收集儿童的个人信息；如果你认为孩子发来了什么，写信给我们，我们会协助处理。</p>
+
+<h2>保存和分享作品</h2>
+<p>「存到相册」会在你允许后把图片存进你的照片图库。分享按钮把一张图片交给 iOS 的系统分享面板，由你决定发到哪里，之后遵循你所选 app 的规则。人人漫画家本身不上传任何东西。</p>
+
+<h2>政策变更</h2>
+<p>如果本政策有变更，新版本会发布在同一地址并标注新的日期。</p>
+
+<h2>联系方式</h2>
+<p>隐私相关问题：<a href="mailto:info@astralogy.org">info@astralogy.org</a></p>
+</div>
+
+</body>
+</html>
