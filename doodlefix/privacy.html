@@ -49,7 +49,7 @@ them again. Tools that work on the picture itself — “Fill”, “Spray”, �
 flow, handled entirely by Apple's StoreKit. We receive no information about you from it — not your
 name, not your Apple Account, not your payment details.</p>
 <p><strong>The AI features (optional).</strong> When you choose to use one, this is sent to our server
-(a Cloudflare Worker), which forwards it to Google's Gemini API and returns the result to your
+(a Cloudflare Worker), which forwards it to a third-party AI model (currently Google's Gemini API) and returns the result to your
 device. The server does not keep what you sent.</p>
 <ul>
   <li><strong>AI Fix</strong> — a rectangle of your drawing around the part you circled, with your
@@ -113,7 +113,7 @@ governed by whichever app you send it to. Nothing is uploaded by DoodleFix.</p>
 <h2>联网的两处</h2>
 <p>app 里只有两件事会联网，其余一律不联网。</p>
 <p><strong>购买。</strong>购买 AI 次数包走的是 Apple 自己的购买流程，完全由 Apple 的 StoreKit 处理。我们不会从中得到关于你的任何信息——姓名、Apple 账号、支付信息，都不会。</p>
-<p><strong>AI 功能（可选）。</strong>当你选择使用时，以下内容会传到我们的服务器（Cloudflare Worker），由它转给 Google 的 Gemini API，再把结果送回你的设备。服务器不保留你发送的内容。</p>
+<p><strong>AI 功能（可选）。</strong>当你选择使用时，以下内容会传到我们的服务器（Cloudflare Worker），由它转给第三方 AI 模型（目前是 Google 的 Gemini API），再把结果送回你的设备。服务器不保留你发送的内容。</p>
 <ul>
   <li><strong>AI 改一改</strong>——圈住那块周围的一块长方形画面（上面标着你画的圈，另附一张圈的遮罩）、一张缩小的整图（只用来对齐画风）、你选的「改好／加上／换成」和提示；「整张」模式是整张画（长边最大 1024 像素）、「改动幅度」和提示。「出 3 张」会把这个请求发三次，每次要一种不同的画法。</li>
   <li><strong>说一句</strong>——你写的那句话和选的风格，配一张白纸，不发送任何画。</li>
